@@ -1,0 +1,38 @@
+name: math-networks
+channels:
+  - conda-forge # consistent, up-to-date packages
+  - defaults
+
+dependencies:
+  # Core language
+  - python=3.11
+
+  # Data manipulation
+  - numpy
+  - pandas
+
+  # Visualization
+  - matplotlib
+  - seaborn
+
+  # Graph analysis
+  - networkx>=3.0
+  - python-louvain # Louvain community detection
+  - adjusttext # label collision avoidance
+
+  # Jupyter environment
+  - jupyterlab
+  - ipykernel
+
+  # Optional: scientific utilities
+  - scipy # KDE in strength distribution
+
+  # Exact pinning for reproducibility (optional; uncomment if desired)
+  # - matplotlib=3.8.4
+  # - networkx=3.2.1
+
+  # pip-only packages (rare case)
+  - pip
+  - pip:
+      # No pip-only deps at the moment; keep list for future additions
+      - ""
