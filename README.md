@@ -19,7 +19,7 @@ Mapping thematic gaps between Mathematics, Computing, and Statistics based on *a
 
 ```bash
 git clone https://github.com/<user>/arxiv-math-networks-2020-24.git
-cd arxiv-math-networks-2020-24
+cd arxiv-math-networks-graph
 conda env create -f environment.yml        # or pip install -r requirements.txt
 conda activate math-net
 jupyter lab notebooks/graph_analysis.ipynb
